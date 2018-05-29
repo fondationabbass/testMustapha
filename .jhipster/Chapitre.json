@@ -1,0 +1,20 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "libChapitre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "categorieCompte",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180529203027",
+    "entityTableName": "chapitre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

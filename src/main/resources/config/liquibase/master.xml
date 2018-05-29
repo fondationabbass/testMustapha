@@ -5,6 +5,28 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203015_added_entity_Candidat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203016_added_entity_ExperienceCandidat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203017_added_entity_Candidature.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203018_added_entity_Projet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203019_added_entity_Visite.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203020_added_entity_SessionProjet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203021_added_entity_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203022_added_entity_Pret.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203023_added_entity_Garantie.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203024_added_entity_Echeance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203025_added_entity_Compte.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203026_added_entity_Parametrage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203027_added_entity_Chapitre.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180529203016_added_entity_constraints_ExperienceCandidat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203017_added_entity_constraints_Candidature.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203018_added_entity_constraints_Projet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203019_added_entity_constraints_Visite.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203021_added_entity_constraints_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203022_added_entity_constraints_Pret.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203023_added_entity_constraints_Garantie.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203024_added_entity_constraints_Echeance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180529203025_added_entity_constraints_Compte.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "pret",
+            "otherEntityName": "pret",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dateTombe",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "montant",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "etatEcheance",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "datePayement",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateRetrait",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180529192208",
+    "entityTableName": "echeance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

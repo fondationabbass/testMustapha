@@ -1,0 +1,58 @@
+
+<div *ngIf="projet">
+    <h2><span jhiTranslate="testMustaphaApp.projet.detail.title">Projet</span> {{projet.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="testMustaphaApp.projet.intitule">Intitule</span></dt>
+        <dd>
+            <span>{{projet.intitule}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.montEstime">Mont Estime</span></dt>
+        <dd>
+            <span>{{projet.montEstime}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.montApp">Mont App</span></dt>
+        <dd>
+            <span>{{projet.montApp}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.domaine">Domaine</span></dt>
+        <dd>
+            <span>{{projet.domaine}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.type">Type</span></dt>
+        <dd>
+            <span>{{projet.type}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.description">Description</span></dt>
+        <dd>
+            <span>{{projet.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.dateCreation">Date Creation</span></dt>
+        <dd>
+            <span>{{projet.dateCreation | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.etat">Etat</span></dt>
+        <dd>
+            <span>{{projet.etat}}</span>
+        </dd>
+        <dt><span jhiTranslate="testMustaphaApp.projet.lieu">Lieu</span></dt>
+        <dd>
+            <span>{{projet.lieu}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'projet/'+ projet.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

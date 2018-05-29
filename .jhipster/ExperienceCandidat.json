@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "candidat",
+            "otherEntityName": "candidat",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "typeInfo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "etab",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adressEtab",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateDeb",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateFin",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180529192200",
+    "entityTableName": "experience_candidat",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

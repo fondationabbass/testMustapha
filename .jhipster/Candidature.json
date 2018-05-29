@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "candidat",
+            "otherEntityName": "candidat",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "candidature",
+            "otherEntityName": "projet",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "candidature"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "candidature",
+            "otherEntityName": "sessionProjet",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "candidature"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "candidature",
+            "otherEntityName": "visite",
+            "otherEntityRelationshipName": "candidature"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180529192201",
+    "entityTableName": "candidature",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

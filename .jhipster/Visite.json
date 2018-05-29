@@ -1,0 +1,55 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "candidature",
+            "otherEntityName": "candidature",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "lieuVisite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateVisite",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "persRencontre",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cadreVisite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "etatLieu",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "visiteur",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "etat",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recomendation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rapport",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180529192203",
+    "entityTableName": "visite",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

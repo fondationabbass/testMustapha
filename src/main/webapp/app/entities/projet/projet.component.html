@@ -1,0 +1,74 @@
+<div>
+    <h2>
+        <span jhiTranslate="testMustaphaApp.projet.home.title">Projets</span>
+        <button class="btn btn-primary float-right jh-create-entity create-projet" [routerLink]="['/', { outlets: { popup: ['projet-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="testMustaphaApp.projet.home.createLabel">
+            Create new Projet
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="projets">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.intitule">Intitule</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.montEstime">Mont Estime</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.montApp">Mont App</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.domaine">Domaine</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.type">Type</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.description">Description</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.dateCreation">Date Creation</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.etat">Etat</span></th>
+            <th><span jhiTranslate="testMustaphaApp.projet.lieu">Lieu</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let projet of projets ;trackBy: trackId">
+                <td><a [routerLink]="['../projet', projet.id ]">{{projet.id}}</a></td>
+                <td>{{projet.intitule}}</td>
+                <td>{{projet.montEstime}}</td>
+                <td>{{projet.montApp}}</td>
+                <td>{{projet.domaine}}</td>
+                <td>{{projet.type}}</td>
+                <td>{{projet.description}}</td>
+                <td>{{projet.dateCreation | date:'mediumDate'}}</td>
+                <td>{{projet.etat}}</td>
+                <td>{{projet.lieu}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../projet', projet.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'projet/'+ projet.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'projet/'+ projet.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

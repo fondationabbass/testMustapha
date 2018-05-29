@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "chapitre",
+            "otherEntityName": "compte",
+            "otherEntityRelationshipName": "chapitre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "libChapitre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "categorieCompte",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180529192211",
+    "entityTableName": "chapitre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

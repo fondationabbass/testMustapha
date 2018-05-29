@@ -1,0 +1,61 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "candidat",
+            "otherEntityName": "client",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "candidat"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "candidat",
+            "otherEntityName": "candidature",
+            "otherEntityRelationshipName": "candidat"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "candidat",
+            "otherEntityName": "experienceCandidat",
+            "otherEntityRelationshipName": "candidat"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateNaissance",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "lieuNaissance",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adresse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "situation",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180529192159",
+    "entityTableName": "candidat",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
